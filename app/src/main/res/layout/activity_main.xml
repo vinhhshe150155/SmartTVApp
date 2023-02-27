@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvEnterCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/enter_code"
+            android:textColor="#fff"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvEnterDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/enter_your_device_id"
+            android:textColor="#A0A0A0"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtCode"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="58dp"
+            android:background="@drawable/edt_code_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/your_code"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:nextFocusDown="@id/btnEnter"
+            android:privateImeOptions="horizontalAlignment=right"
+            android:textColor="#fff"
+            android:textColorHint="#80A0A0A0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="360dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_enter_selector"
+            android:text="@string/enter"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
